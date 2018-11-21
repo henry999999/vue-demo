@@ -5,6 +5,8 @@ import HomeComponent from "../pages/home"
 import MemberComponent from "../pages/member"
 import SearchComponent from "../pages/search"
 import ShopcarComponent from "../pages/shopcar"
+import newsListComponent from "../pages/newsList"
+import newsInfoComponent from "../pages/newsInfo"
 // 注册路由
 Vue.use(Router)
 
@@ -15,7 +17,9 @@ export default new Router({
     {path:"/home",component:HomeComponent},
     {path:"/member",component:MemberComponent},
     {path:"/search",component:SearchComponent},
-    {path:"/shopcar",component:ShopcarComponent}
+    {path:"/shopcar",component:ShopcarComponent},
+    {path:"/home/newsList",component:newsListComponent},
+    {path:"/home/newsInfo/:id",component:newsInfoComponent}
   ],
   // 当前路由高亮
   linkActiveClass:"mui-active"
