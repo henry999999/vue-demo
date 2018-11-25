@@ -1,6 +1,5 @@
 <template>
     <div class="home-container">
-        HomeContainer
         <!-- 轮播图 -->
         <mt-swipe :auto="4000" class="bannerContainer">
         <mt-swipe-item v-for="item in bannerData" :key="item.img">
@@ -24,7 +23,7 @@
               </router-link>
              </li>
 		 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-             <router-link to="#">
+             <router-link to="/home/goodsList">
 		         <img src="../../images/menu3.png" alt="">
 		        <div class="mui-media-body">商品购买</div>
               </router-link>

@@ -9,6 +9,8 @@ import newsListComponent from "../pages/newsList"
 import newsInfoComponent from "../pages/newsInfo"
 import imgListComponent from "../pages/imgList"
 import imgInfoComponent from "../pages/imgInfo"
+import goodsListComponent from "../pages/goodsList"
+import goodInfoComponent from "../pages/goodInfo"
 // 注册路由
 Vue.use(Router)
 
@@ -23,7 +25,9 @@ export default new Router({
     {path:"/home/newsList",component:newsListComponent},
     {path:"/home/newsInfo/:id",component:newsInfoComponent},
     {path:"/home/imgList",component:imgListComponent},
-    {path:"/home/imgInfo/:id",component:imgInfoComponent}
+    {path:"/home/imgInfo/:id",component:imgInfoComponent},
+    {path:"/home/goodsList",component:goodsListComponent},
+    {path:"/home/goodInfo/:id",component:goodInfoComponent}
   ],
   // 当前路由高亮
   linkActiveClass:"mui-active"
