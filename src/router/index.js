@@ -11,6 +11,8 @@ import imgListComponent from "../pages/imgList"
 import imgInfoComponent from "../pages/imgInfo"
 import goodsListComponent from "../pages/goodsList"
 import goodInfoComponent from "../pages/goodInfo"
+import goodsComment from "../pages/goodInfo/goodsComment.vue"
+import goodsImage from "../pages/goodInfo/goodsImage.vue"
 // 注册路由
 Vue.use(Router)
 
@@ -27,7 +29,9 @@ export default new Router({
     {path:"/home/imgList",component:imgListComponent},
     {path:"/home/imgInfo/:id",component:imgInfoComponent},
     {path:"/home/goodsList",component:goodsListComponent},
-    {path:"/home/goodInfo/:id",component:goodInfoComponent}
+    {path:"/home/goodInfo/:id",component:goodInfoComponent},
+    {path:"/home/goodsComment/:id",component:goodsComment},
+    {path:"/home/goodsImage/:id",component:goodsImage}
   ],
   // 当前路由高亮
   linkActiveClass:"mui-active"
