@@ -1,6 +1,6 @@
 <template>
     <div class="newsInfo-container">
-        <div class="info-hesder  text-center">
+        <div class="info-header  text-center">
            <h4 class="info-title">{{newsInfo.title}}</h4>
            <p class="subtitle">
              <span>发表时间:{{ newsInfo.add_time | dateFormat("YYYY-MM-DD HH-mm-ss") }}</span>
@@ -46,7 +46,7 @@
 <style lang="less">
     .newsInfo-container{
         padding: 0 5px;
-        .info-hesder {
+        .info-header {
             >h4{
                 text-align: center;
                 color: red;

@@ -7,6 +7,8 @@ import SearchComponent from "../pages/search"
 import ShopcarComponent from "../pages/shopcar"
 import newsListComponent from "../pages/newsList"
 import newsInfoComponent from "../pages/newsInfo"
+import imgListComponent from "../pages/imgList"
+import imgInfoComponent from "../pages/imgInfo"
 // 注册路由
 Vue.use(Router)
 
@@ -19,7 +21,9 @@ export default new Router({
     {path:"/search",component:SearchComponent},
     {path:"/shopcar",component:ShopcarComponent},
     {path:"/home/newsList",component:newsListComponent},
-    {path:"/home/newsInfo/:id",component:newsInfoComponent}
+    {path:"/home/newsInfo/:id",component:newsInfoComponent},
+    {path:"/home/imgList",component:imgListComponent},
+    {path:"/home/imgInfo/:id",component:imgInfoComponent}
   ],
   // 当前路由高亮
   linkActiveClass:"mui-active"
